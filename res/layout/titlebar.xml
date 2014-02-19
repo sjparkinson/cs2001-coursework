@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/titleBarWrapper"
+    android:layout_width="fill_parent"
+    android:layout_height="48dip"
+    android:background="@color/titlebar_background"
+    android:fitsSystemWindows="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/titlebarHomeBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/titlebarUserIconBtn"
+        android:background="@color/titlebar_background"
+        android:clickable="true"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/titlebarHome"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@color/titlebar_background"
+            android:clickable="true"
+            android:contentDescription="@string/titlebar_home_description"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/titlebarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/titlebarHome"
+            android:background="@color/titlebar_background"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/background"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/titlebarUserIconBtn"
+        android:background="@color/light_gray" />
+
+    <RelativeLayout
+        android:id="@+id/titlebarUserIconBtn"
+        android:layout_width="48dip"
+        android:layout_height="fill_parent"
+        android:layout_alignLeft="@+id/userIcon"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@color/titlebar_background"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/titlebarUserIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@color/titlebar_background"
+            android:contentDescription="@string/titlebar_user_btn_description"
+            android:src="@drawable/ic_user" />
+    </RelativeLayout>
+
+</RelativeLayout>

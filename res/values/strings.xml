@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="main_hello">Hello, Guest!</string>
+    <string name="app_name">Poster Project</string>
+    <string name="main_search_hint">Search…</string>
+    <string name="main_search_btn">Go</string>
+    <string name="main_recomended_title">Recommended Posters</string>
+    <string name="main_search_btn_description">Search</string>
+    <string name="login_submit_btn">Login</string>
+    <string name="titlebar_user_btn_description">User</string>
+    <string name="login_email_hint">Email Address</string>
+    <string name="login_description">Sign in with your account.</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_register_link">New user? Register here…</string>
+    <string name="register_name">Full Name</string>
+    <string name="register_email">Email Address</string>
+    <string name="register_password">Password</string>
+    <string name="register_address">Shipping Address</string>
+    <string name="register_submit">Register</string>
+    <string name="register_login_link">Already have an account?\nLogin here…</string>
+    <string name="main_featured_title">Poster of the Month!</string>
+    <string name="main_categories_btn">View Categories</string>
+    <string name="register_title">New Account</string>
+    <string name="login_title">Login</string>
+    <string name="main_featured_description">Poster of the month.</string>
+    <string name="main_featured_poster_title">Now Panic And Freak Out</string>
+    <string name="categories_title">Categories</string>
+    <string name="about_title">About Us</string>
+    <string name="about_description">Where we\'re located</string>
+    <string name="titlebar_home_description">Home</string>
+    <string name="main_featured_buy_btn">Buy Now</string>
+    <string name="menu_about">About</string>
+
+</resources>

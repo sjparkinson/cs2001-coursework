@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp" >
+
+            <!-- Dummy item to prevent EditText from receiving focus -->
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="0px"
+                android:focusable="true"
+                android:focusableInTouchMode="true" />
+
+            <EditText
+                android:id="@+id/mainSearchInput"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/mainSearchBtn"
+                android:hint="@string/main_search_hint"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:lines="1"
+                android:nextFocusLeft="@+id/mainSearchInput"
+                android:nextFocusUp="@+id/mainSearchInput" >
+            </EditText>
+
+            <ImageButton
+                android:id="@+id/mainSearchBtn"
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@string/main_search_btn_description"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_search" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/mainCategoriesBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="@string/main_categories_btn"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/mainFeaturedTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/main_featured_title"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_margin="10dp" >
+
+            <ImageView
+                android:id="@+id/mainFeaturedPoster"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:contentDescription="@string/main_featured_description"
+                android:src="@drawable/example_poster" />
+
+            <TextView
+                android:id="@+id/mainFeaturedPosterTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/mainFeaturedPoster"
+                android:text="@string/main_featured_poster_title" />
+
+            <TextView
+                android:id="@+id/mainFeaturedDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/mainFeaturedPosterTitle"
+                android:layout_below="@+id/mainFeaturedPosterTitle"
+                android:text="This is the poster description and details."
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/mainFeaturedPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/background"
+                android:text="£5.99"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <Button
+                android:id="@+id/mainFeaturedBuyBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/mainFeaturedPoster"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/main_featured_buy_btn" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/mainRecomendedTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/main_recomended_title"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <Gallery
+            android:id="@+id/mainRecomendedGallery"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="5dp"
+            android:background="#EEEEEE" />
+    </LinearLayout>
+
+</ScrollView>
